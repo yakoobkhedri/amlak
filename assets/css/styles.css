@@ -49,6 +49,9 @@ a {
 .w-22{
     width: 22px;
 }
+.rounded-4{
+    border-radius: 0.5rem;
+}
 .after {
     position: relative;
 }
