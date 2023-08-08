@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "parastoo-Regular";
+    src: url('../fonts/web/Farsi-Digits-Without-Latin/Parastoo-FD-WOL.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "parastoo-Bold";
+    src: url('../fonts/web/Farsi-Digits-Without-Latin/Parastoo-Bold-FD-WOL.ttf') format("truetype");
+}
+
+body {
+    font-family: "parastoo-Regular";
+    user-select: none;
+}
+
+.main-bg {
+    background-color: #198754;
+}
+
+.main-text {
+    color: #198754;
+}
+
+.font-bold {
+    font-family: "parastoo-Bold";
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.fs-7 {
+    font-size: 12px;
+}
+
+.fs-8 {
+    font-size: 10px;
+}
+
+.transition {
+    transition: all .4s;
+}
+.w-22{
+    width: 22px;
+}
+.after {
+    position: relative;
+}
+
+.after::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -14px;
+    width: 100%;
+    height: 3px;
+    border-radius: 33px;
+    background-color: #F7ADAF;
+}
+
+/* header */
+img[alt='logo'] {
+    width: 170px;
+}
+
+header {
+    padding: 25px 0;
+    position: relative;
+    z-index: 99;
+}
+
+header a {
+    color: white !important;
+}
+header a:hover,header a.active {
+    color: #198754 !important;
+}
+header ul li:hover ul {
+    opacity: 100%;
+    visibility: visible;
+}
+header ul ul {
+    top: 54px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+}
+
+header ul ul a {
+    color: #333c56 !important;
+    width: 230px;
+}
+
+header ul ul ::before {
+    background-color: #ffffff;
+    content: "";
+    width: 22px;
+    height: 22px;
+    right: 27px;
+    top: 20px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+}
+
+/* banner */
+.vedio-banner {
+    position: relative;
+    background-color: black;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 100px 0;
+    width: 100%;
+    min-height: 500px;
+    height: 100vh;
+    margin-top: -89px;
+  }
+  .vedio-banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    max-height: 640px;
+    object-fit: cover;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .hero-banner.vedio-banner .container {
+    z-index: 5;
+  }
+  .vedio-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0c1221;
+    opacity: 0.6;
+    z-index: 3;
+  }
+
+/* responsive */
+@media only screen and (max-width:1400px) {}
+
+@media only screen and (max-width:1200px) {}
+
+@media only screen and (max-width:992px) {}
+
+@media only screen and (max-width:768px) {}
+
+@media only screen and (max-width:576px) {}
+
+@media only screen and (max-width:400px) {}
