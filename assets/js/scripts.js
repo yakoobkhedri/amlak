@@ -4,24 +4,10 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
 // swiper
-var menuSwiper = new Swiper(".menuSwiper", {
+var menuSwiper = new Swiper(".home", {
   loop: true,
   autoplay: true,
-  slidesPerView: 7,
-  breakpoints: {
-    576: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    992: {
-      slidesPerView: 4,
-    },
-    1200: {
-      slidesPerView: 5,
-    }
-  },
+  slidesPerView: 1,
 });
 
 // animation

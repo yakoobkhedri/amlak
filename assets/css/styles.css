@@ -20,12 +20,15 @@ body {
 .main-text {
     color: #198754;
 }
-.second-bg{
+
+.second-bg {
     background-color: #16447d;
 }
-.second-text{
+
+.second-text {
     color: #16447d;
 }
+
 .font-bold {
     font-family: "parastoo-Bold";
 }
@@ -34,10 +37,23 @@ body {
     cursor: pointer;
 }
 
+.alert-orange {
+    background: rgba(255, 87, 34, 0.1);
+    color: #ff5722;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
 a {
     cursor: pointer;
     text-decoration: none;
     transition: all .4s;
+}
+
+a:hover{
+    color: #198754;
 }
 
 .fs-7 {
@@ -165,22 +181,26 @@ header ul ul::before {
     opacity: 0.6;
     z-index: 3;
 }
+
 #searchBox .nav-tabs .nav-link {
     color: white;
-  }
-#searchBox .nav-tabs .nav-link.active,#searchBox .nav-tabs .nav-link:hover{
-  background-color: transparent;
-  color: #198754;
-  border-top:transparent;
-  border-left: transparent;
-  border-right: transparent;
-  border-bottom: transparent;
 }
-#searchBox .tab-content > .tab-pane {
+
+#searchBox .nav-tabs .nav-link.active,
+#searchBox .nav-tabs .nav-link:hover {
+    background-color: transparent;
+    color: #198754;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+
+#searchBox .tab-content>.tab-pane {
     position: absolute;
     left: 0;
     right: 0;
-  }
+}
 
 /* responsive */
 @media only screen and (max-width:1400px) {}
