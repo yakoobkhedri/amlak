@@ -9,7 +9,20 @@ var menuSwiper = new Swiper(".home", {
   autoplay: true,
   slidesPerView: 1,
 });
-
+var menuSwiper = new Swiper(".team", {
+  loop: true,
+  autoplay: true,
+  slidesPerView: 3,
+  spaceBetween:40,
+  breakpoints:{
+    576:{
+      slidesPerView:2
+    },
+    992:{
+      slidesPerView:3
+    }
+  }
+});
 // animation
 
 ScrollReveal().reveal('.top', {
