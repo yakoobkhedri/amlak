@@ -29,6 +29,14 @@ body {
     color: #16447d;
 }
 
+.third-bg{
+    background-color: #616e96;
+}
+
+.third-text{
+    color: #616e96;
+}
+
 .font-bold {
     font-family: "parastoo-Bold";
 }
@@ -200,6 +208,16 @@ header ul ul::before {
     position: absolute;
     left: 0;
     right: 0;
+}
+
+/* latest homes */
+
+.homes img[alt='bed']{
+    width: 17px;
+}
+
+.seeDetails:hover{
+    background-color: #198754;
 }
 
 /* responsive */
