@@ -107,9 +107,9 @@
 
     <main>
 
-        <!-- banner -->
+        <!-- banner && searchBox -->
         <section class="hero-banner vedio-banner">
-            <div class="overlay"></div>	
+            <div class="overlay"></div>
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="assets/img/banners.mp4" type="video/mp4">
             </video>
@@ -117,58 +117,72 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-12 col-lg-12 col-md-12">
                         <h1 class="font-bold text-center display-3 text-white">خانه جدید خود را پیدا کنید</h1>
-                        <p class="text-center mb-4 fw-bold text-white">ملک جدید و برجسته واقع در شهر محلی خود را پیدا کنید.</p>
+                        <p class="text-center mb-4 fw-bold text-white">ملک جدید و برجسته واقع در شهر محلی خود را پیدا
+                            کنید.</p>
                     </div>
                 </div>
                 <div id="searchBox" class="mt-1">
-                    <form class="container primary-bg rounded-2 py-4 px-5 top position-relative" data-sr-id="0" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s ease-out 0.5s, transform 2s ease-out 0.5s;">
-                        <ul class="nav nav-tabs gap-3 d-flex justify-content-center border-bottom-0" id="myTab" role="tablist" style="top: -40px;z-index: 9!important;">
+                    <form class="container primary-bg rounded-2 py-4 px-5 top position-relative" data-sr-id="0"
+                        style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s ease-out 0.5s, transform 2s ease-out 0.5s;">
+                        <ul class="nav nav-tabs gap-3 d-flex justify-content-center border-bottom-0" id="myTab"
+                            role="tablist" style="top: -40px;z-index: 9!important;">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link fw-bold active" id="payment-tab" data-bs-toggle="tab" data-bs-target="#payment-tab-pane" type="button" role="tab" aria-controls="payment-tab-pane" aria-selected="false">خرید</button>
+                                <button class="nav-link fw-bold" id="payment-tab" data-bs-toggle="tab"
+                                    data-bs-target="#payment-tab-pane" type="button" role="tab"
+                                    aria-controls="payment-tab-pane" aria-selected="false">خرید</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link fw-bold" id="Installment-tab" data-bs-toggle="tab" data-bs-target="#Installment-tab-pane" type="button" role="tab" aria-controls="Installment-tab-pane" aria-selected="false">فروش</button>
+                                <button class="nav-link fw-bold" id="Installment-tab" data-bs-toggle="tab"
+                                    data-bs-target="#Installment-tab-pane" type="button" role="tab"
+                                    aria-controls="Installment-tab-pane" aria-selected="false">فروش</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link fw-bold" id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-tab-pane" type="button" role="tab" aria-controls="vehicle-tab-pane" aria-selected="true">اجاره</button>
+                                <button class="nav-link fw-bold active" id="vehicle-tab" data-bs-toggle="tab"
+                                    data-bs-target="#vehicle-tab-pane" type="button" role="tab"
+                                    aria-controls="vehicle-tab-pane" aria-selected="true">اجاره</button>
                             </li>
                         </ul>
                         <div class="tab-content mt-3" id="myTabContent">
-                            <div class="d-flex align-items-center bg-white overflow-hidden px-3 rounded-4 flex-column flex-lg-row gap-3 tab-pane fade active show" id="payment-tab-pane" role="tabpanel" aria-labelledby="payment-tab" tabindex="0">
+                            <div class="d-flex align-items-center bg-white overflow-hidden px-3 rounded-4 flex-column flex-lg-row gap-3 tab-pane fade"
+                                id="payment-tab-pane" role="tabpanel" aria-labelledby="payment-tab" tabindex="0">
                                 <div class="flex-grow-1 border-start py-3">
                                     <label class="text-muted mb-2">قیمت</label>
-                                    <input type="text" class="form-control cursor border-0" placeholder="قیمت را وارد کنید...">
+                                    <input type="text" class="form-control cursor border-0"
+                                        placeholder="قیمت را وارد کنید...">
                                 </div>
                                 <div class="flex-grow-1 border-start py-3">
                                     <label class="text-muted mb-2">شهر/استان</label>
-                                    <select id="location" class="form-control cursor border-0 font-bold second-text" data-select2-id="select2-data-location" tabindex="-1" aria-hidden="true">
-                                        <option value="" data-select2-id="select2-data-16-zul5">موقعیت</option>
-                                        <option value="1" data-select2-id="select2-data-35-n2xo">تهران</option>
-                                        <option value="2" data-select2-id="select2-data-36-4tq4">کرج</option>
-                                        <option value="3" data-select2-id="select2-data-37-10oz">تبریز</option>
-                                        <option value="4" data-select2-id="select2-data-38-9ykx">اصفهان</option>
-                                        <option value="5" data-select2-id="select2-data-39-e7gj">رشت</option>
-                                        <option value="6" data-select2-id="select2-data-40-ngla">زنجان</option>
+                                    <select id="location" class="form-control cursor border-0 font-bold second-text">
+                                        <option>موقعیت</option>
+                                        <option>تهران</option>
+                                        <option>کرج</option>
+                                        <option>تبریز</option>
+                                        <option>اصفهان</option>
+                                        <option>رشت</option>
+                                        <option>زنجان</option>
                                     </select>
                                 </div>
                                 <div class="flex-grow-1 border-start py-3">
                                     <label class="text-muted mb-2">نوع ملک</label>
-                                    <select id="location" class="form-control cursor border-0 font-bold second-text" data-select2-id="select2-data-location" tabindex="-1" aria-hidden="true">
-                                        <option value="" data-select2-id="select2-data-16-zul5">نوع ملک</option>
-                                        <option value="1" data-select2-id="select2-data-35-n2xo">آپارتمان</option>
-                                        <option value="2" data-select2-id="select2-data-36-4tq4">ویلا</option>
-                                        <option value="3" data-select2-id="select2-data-37-10oz">تجاری</option>
-                                        <option value="4" data-select2-id="select2-data-38-9ykx">دفتر</option>
-                                        <option value="5" data-select2-id="select2-data-39-e7gj">پارکینگ</option>
+                                    <select id="location" class="form-control cursor border-0 font-bold second-text">
+                                        <option>نوع ملک</option>
+                                        <option>آپارتمان</option>
+                                        <option>ویلا</option>
+                                        <option>تجاری</option>
+                                        <option>دفتر</option>
+                                        <option>پارکینگ</option>
                                     </select>
                                 </div>
                                 <div class="flex-grow-1 border-start py-3">
                                     <label class="text-white mb-2">.</label>
-                                    <div class="d-flex align-items-center justify-content-center gap-2 second-text font-bold cursor">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-sliders2" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5ZM12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5ZM1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8Zm9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5Zm1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"/>
-                                          </svg>
-                                       <span>فیلتر پیشرفته</span>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center gap-2 second-text font-bold cursor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            fill="currentColor" class="bi bi-sliders2" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5ZM12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5ZM1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8Zm9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5Zm1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z" />
+                                        </svg>
+                                        <span>فیلتر پیشرفته</span>
                                     </div>
                                 </div>
                                 <div class="flex-grow-1 py-3">
@@ -176,41 +190,47 @@
                                     <input type="submit" value="جستجوی ملک" class="btn btn-success d-block w-100">
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center bg-white overflow-hidden px-3 rounded-4 flex-column flex-lg-row gap-3 tab-pane fade" id="Installment-tab-pane" role="tabpanel" aria-labelledby="Installment-tab" tabindex="0">
+                            <div class="d-flex align-items-center bg-white overflow-hidden px-3 rounded-4 flex-column flex-lg-row gap-3 tab-pane fade"
+                                id="Installment-tab-pane" role="tabpanel" aria-labelledby="Installment-tab"
+                                tabindex="0">
                                 <div class="flex-grow-1 border-start py-3">
                                     <label class="text-muted mb-2">قیمت</label>
-                                    <input type="text" class="form-control cursor border-0" placeholder="قیمت را وارد کنید...">
+                                    <input type="text" class="form-control cursor border-0"
+                                        placeholder="قیمت را وارد کنید...">
                                 </div>
                                 <div class="flex-grow-1 border-start py-3">
                                     <label class="text-muted mb-2">شهر/استان</label>
-                                    <select id="location" class="form-control cursor border-0 font-bold second-text" data-select2-id="select2-data-location" tabindex="-1" aria-hidden="true">
-                                        <option value="" data-select2-id="select2-data-16-zul5">موقعیت</option>
-                                        <option value="1" data-select2-id="select2-data-35-n2xo">تهران</option>
-                                        <option value="2" data-select2-id="select2-data-36-4tq4">کرج</option>
-                                        <option value="3" data-select2-id="select2-data-37-10oz">تبریز</option>
-                                        <option value="4" data-select2-id="select2-data-38-9ykx">اصفهان</option>
-                                        <option value="5" data-select2-id="select2-data-39-e7gj">رشت</option>
-                                        <option value="6" data-select2-id="select2-data-40-ngla">زنجان</option>
+                                    <select id="location" class="form-control cursor border-0 font-bold second-text">
+                                        <option>موقعیت</option>
+                                        <option>تهران</option>
+                                        <option>کرج</option>
+                                        <option>تبریز</option>
+                                        <option>اصفهان</option>
+                                        <option>رشت</option>
+                                        <option>زنجان</option>
                                     </select>
                                 </div>
                                 <div class="flex-grow-1 border-start py-3">
                                     <label class="text-muted mb-2">نوع ملک</label>
-                                    <select id="location" class="form-control cursor border-0 font-bold second-text" data-select2-id="select2-data-location" tabindex="-1" aria-hidden="true">
-                                        <option value="" data-select2-id="select2-data-16-zul5">نوع ملک</option>
-                                        <option value="1" data-select2-id="select2-data-35-n2xo">آپارتمان</option>
-                                        <option value="2" data-select2-id="select2-data-36-4tq4">ویلا</option>
-                                        <option value="3" data-select2-id="select2-data-37-10oz">تجاری</option>
-                                        <option value="4" data-select2-id="select2-data-38-9ykx">دفتر</option>
-                                        <option value="5" data-select2-id="select2-data-39-e7gj">پارکینگ</option>
+                                    <select id="location" class="form-control cursor border-0 font-bold second-text">
+                                        <option>نوع ملک</option>
+                                        <option>آپارتمان</option>
+                                        <option>ویلا</option>
+                                        <option>تجاری</option>
+                                        <option>دفتر</option>
+                                        <option>پارکینگ</option>
                                     </select>
                                 </div>
                                 <div class="flex-grow-1 border-start py-3">
                                     <label class="text-white mb-2">.</label>
-                                    <div class="d-flex align-items-center justify-content-center gap-2 second-text font-bold cursor">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-sliders2" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5ZM12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5ZM1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8Zm9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5Zm1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"/>
-                                          </svg>
-                                       <span>فیلتر پیشرفته</span>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center gap-2 second-text font-bold cursor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            fill="currentColor" class="bi bi-sliders2" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5ZM12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5ZM1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8Zm9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5Zm1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z" />
+                                        </svg>
+                                        <span>فیلتر پیشرفته</span>
                                     </div>
                                 </div>
                                 <div class="flex-grow-1 py-3">
@@ -218,41 +238,46 @@
                                     <input type="submit" value="جستجوی ملک" class="btn btn-success d-block w-100">
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center bg-white overflow-hidden px-3 rounded-4 flex-column flex-lg-row gap-3 tab-pane fade" id="vehicle-tab-pane" role="tabpanel" aria-labelledby="vehicle-tab" tabindex="0">
+                            <div class="d-flex align-items-center bg-white overflow-hidden px-3 rounded-4 flex-column flex-lg-row gap-3 tab-pane fade active show"
+                                id="vehicle-tab-pane" role="tabpanel" aria-labelledby="vehicle-tab" tabindex="0">
                                 <div class="flex-grow-1 border-start py-3">
                                     <label class="text-muted mb-2">قیمت</label>
-                                    <input type="text" class="form-control cursor border-0" placeholder="قیمت را وارد کنید...">
+                                    <input type="text" class="form-control cursor border-0"
+                                        placeholder="قیمت را وارد کنید...">
                                 </div>
                                 <div class="flex-grow-1 border-start py-3">
                                     <label class="text-muted mb-2">شهر/استان</label>
-                                    <select id="location" class="form-control cursor border-0 font-bold second-text" data-select2-id="select2-data-location" tabindex="-1" aria-hidden="true">
-                                        <option value="" data-select2-id="select2-data-16-zul5">موقعیت</option>
-                                        <option value="1" data-select2-id="select2-data-35-n2xo">تهران</option>
-                                        <option value="2" data-select2-id="select2-data-36-4tq4">کرج</option>
-                                        <option value="3" data-select2-id="select2-data-37-10oz">تبریز</option>
-                                        <option value="4" data-select2-id="select2-data-38-9ykx">اصفهان</option>
-                                        <option value="5" data-select2-id="select2-data-39-e7gj">رشت</option>
-                                        <option value="6" data-select2-id="select2-data-40-ngla">زنجان</option>
+                                    <select id="location" class="form-control cursor border-0 font-bold second-text">
+                                        <option>موقعیت</option>
+                                        <option>تهران</option>
+                                        <option>کرج</option>
+                                        <option>تبریز</option>
+                                        <option>اصفهان</option>
+                                        <option>رشت</option>
+                                        <option>زنجان</option>
                                     </select>
                                 </div>
                                 <div class="flex-grow-1 border-start py-3">
                                     <label class="text-muted mb-2">نوع ملک</label>
-                                    <select id="location" class="form-control cursor border-0 font-bold second-text" data-select2-id="select2-data-location" tabindex="-1" aria-hidden="true">
-                                        <option value="" data-select2-id="select2-data-16-zul5">نوع ملک</option>
-                                        <option value="1" data-select2-id="select2-data-35-n2xo">آپارتمان</option>
-                                        <option value="2" data-select2-id="select2-data-36-4tq4">ویلا</option>
-                                        <option value="3" data-select2-id="select2-data-37-10oz">تجاری</option>
-                                        <option value="4" data-select2-id="select2-data-38-9ykx">دفتر</option>
-                                        <option value="5" data-select2-id="select2-data-39-e7gj">پارکینگ</option>
+                                    <select id="location" class="form-control cursor border-0 font-bold second-text">
+                                        <option>نوع ملک</option>
+                                        <option>آپارتمان</option>
+                                        <option>ویلا</option>
+                                        <option>تجاری</option>
+                                        <option>دفتر</option>
+                                        <option>پارکینگ</option>
                                     </select>
                                 </div>
                                 <div class="flex-grow-1 border-start py-3">
                                     <label class="text-white mb-2">.</label>
-                                    <div class="d-flex align-items-center justify-content-center gap-2 second-text font-bold cursor">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-sliders2" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5ZM12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5ZM1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8Zm9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5Zm1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"/>
-                                          </svg>
-                                       <span>فیلتر پیشرفته</span>
+                                    <div
+                                        class="d-flex align-items-center justify-content-center gap-2 second-text font-bold cursor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                            fill="currentColor" class="bi bi-sliders2" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5ZM12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5ZM1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8Zm9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5Zm1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z" />
+                                        </svg>
+                                        <span>فیلتر پیشرفته</span>
                                     </div>
                                 </div>
                                 <div class="flex-grow-1 py-3">
@@ -262,6 +287,24 @@
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- latest homes -->
+        <section class="py-5">
+            <div class="container">
+                <div class="text-center w-50 mx-auto">
+                    <h2 class="second-text font-bold">املاک ارسال شده اخیر</h2>
+                    <p class="text-muted fw-bold mt-3">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون
+                    </p>
+                </div>
+                <div class="row g-4">
+                  <div class="col-lg-4 col-md-6">
+                    
+                  </div>
                 </div>
             </div>
         </section>
