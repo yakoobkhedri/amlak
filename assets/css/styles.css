@@ -20,7 +20,12 @@ body {
 .main-text {
     color: #198754;
 }
-
+.second-bg{
+    background-color: #16447d;
+}
+.second-text{
+    color: #16447d;
+}
 .font-bold {
     font-family: "parastoo-Bold";
 }
@@ -46,26 +51,13 @@ a {
 .transition {
     transition: all .4s;
 }
-.w-22{
+
+.w-22 {
     width: 22px;
 }
-.rounded-4{
-    border-radius: 0.5rem;
-}
-.after {
-    position: relative;
-}
 
-.after::after {
-    content: '';
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: -14px;
-    width: 100%;
-    height: 3px;
-    border-radius: 33px;
-    background-color: #F7ADAF;
+.rounded-4 {
+    border-radius: 0.5rem;
 }
 
 /* header */
@@ -82,13 +74,17 @@ header {
 header a {
     color: white !important;
 }
-header a:hover,header a.active {
+
+header a:hover,
+header a.active {
     color: #198754 !important;
 }
+
 header ul li:hover ul {
     opacity: 100%;
     visibility: visible;
 }
+
 header ul ul {
     top: 54px;
     opacity: 0;
@@ -101,7 +97,11 @@ header ul ul a {
     width: 230px;
 }
 
-header ul ul ::before {
+header ul ul a:hover {
+    transform: translateX(-9px);
+}
+
+header ul ul::before {
     background-color: #ffffff;
     content: "";
     width: 22px;
@@ -132,8 +132,9 @@ header ul ul ::before {
     min-height: 500px;
     height: 100vh;
     margin-top: -89px;
-  }
-  .vedio-banner video {
+}
+
+.vedio-banner video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -148,11 +149,13 @@ header ul ul ::before {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-  }
-  .hero-banner.vedio-banner .container {
+}
+
+.hero-banner.vedio-banner .container {
     z-index: 5;
-  }
-  .vedio-banner .overlay {
+}
+
+.vedio-banner .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -161,6 +164,22 @@ header ul ul ::before {
     background-color: #0c1221;
     opacity: 0.6;
     z-index: 3;
+}
+#searchBox .nav-tabs .nav-link {
+    color: white;
+  }
+#searchBox .nav-tabs .nav-link.active,#searchBox .nav-tabs .nav-link:hover{
+  background-color: transparent;
+  color: #198754;
+  border-top:transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+}
+#searchBox .tab-content > .tab-pane {
+    position: absolute;
+    left: 0;
+    right: 0;
   }
 
 /* responsive */

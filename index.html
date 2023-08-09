@@ -120,504 +120,74 @@
                         <p class="text-center mb-4 fw-bold text-white">ملک جدید و برجسته واقع در شهر محلی خود را پیدا کنید.</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12">
-                        <div class="simple_tab_search center">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="buy-tab" data-toggle="tab" href="#buy" role="tab" aria-controls="buy" aria-selected="true">خرید</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="sell-tab" data-toggle="tab" href="#sell" role="tab" aria-controls="sell" aria-selected="false">فروش</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="rent-tab" data-toggle="tab" href="#rent" role="tab" aria-controls="rent" aria-selected="false">اجاره</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <!-- Tab for Buy -->
-                                <div class="tab-pane fade show active" id="buy" role="tabpanel" aria-labelledby="buy-tab">
-                                    <div class="full_search_box nexio_search lightanic_search hero_search-radius modern">
-                                        <div class="search_hero_wrapping">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-sm-12 d-md-none d-lg-block">
-                                                    <div class="form-group">
-                                                        <label>قیمت</label>
-                                                        <input type="text" class="form-control search_input b-0" placeholder="شهر , منطقه , محله و ...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-3 col-sm-12">
-                                                    <div class="form-group">
-                                                        <label>شهر/استان</label>
-                                                        <div class="input-with-icon">
-                                                            <select id="location" class="form-control select2-hidden-accessible" data-select2-id="select2-data-location" tabindex="-1" aria-hidden="true">
-                                                                <option value="" data-select2-id="select2-data-16-2izl">&nbsp;</option>
-                                                                <option value="1">تهران</option>
-                                                                <option value="2">کرج</option>
-                                                                <option value="3">تبریز</option>
-                                                                <option value="4">اصفهان</option>
-                                                                <option value="5">رشت</option>
-                                                                <option value="6">زنجان</option>
-                                                            </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="select2-data-15-0b5a" style="width: 251.7px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-location-container" aria-controls="select2-location-container"><span class="select2-selection__rendered" id="select2-location-container" role="textbox" aria-readonly="true" title="موقعیت"><span class="select2-selection__placeholder">موقعیت</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-2 col-md-3 col-sm-12">
-                                                    <div class="form-group">
-                                                        <label>نوع ملک</label>
-                                                        <div class="input-with-icon">
-                                                            <select id="ptypes" class="form-control select2-hidden-accessible" data-select2-id="select2-data-ptypes" tabindex="-1" aria-hidden="true">
-                                                                <option value="" data-select2-id="select2-data-14-u7k2">&nbsp;</option>
-                                                                <option value="1">همه دسته ها</option>
-                                                                <option value="2">آپارتمان</option>
-                                                                <option value="3">ویلا</option>
-                                                                <option value="4">تجاری</option>
-                                                                <option value="5">دفتر</option>
-                                                                <option value="6">پارکینگ</option>
-                                                            </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="select2-data-13-oyf7" style="width: 157.533px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-ptypes-container" aria-controls="select2-ptypes-container"><span class="select2-selection__rendered" id="select2-ptypes-container" role="textbox" aria-readonly="true" title="نوع ملک"><span class="select2-selection__placeholder">نوع ملک</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-2 col-md-3 col-sm-12">
-                                                    <div class="form-group none">
-                                                        <a class="collapsed ad-search" data-toggle="collapse" data-parent="#search" data-target="#advance-search" href="javascript:void(0);" aria-expanded="false" aria-controls="advance-search"><i class="fa fa-sliders-h ml-2"></i>فیلتر پیشرفته</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-2 col-md-3 col-sm-12 small-padd">
-                                                    <div class="form-group none">
-                                                        <a href="#" class="btn search-btn">جستجوی ملک</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Collapse Advance Search Form -->
-                                            <div class="collapse" id="advance-search" aria-expanded="false" role="banner">
-                                                <div class="row">
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="form-group none style-auto">
-                                                            <select id="bedrooms" class="form-control select2-hidden-accessible" data-select2-id="select2-data-bedrooms" tabindex="-1" aria-hidden="true">
-                                                                <option value="" data-select2-id="select2-data-2-00n7">&nbsp;</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                                <option value="5">5</option>
-                                                            </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="select2-data-1-bgfx" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-bedrooms-container" aria-controls="select2-bedrooms-container"><span class="select2-selection__rendered" id="select2-bedrooms-container" role="textbox" aria-readonly="true" title="اتاق خواب"><span class="select2-selection__placeholder">اتاق خواب</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="form-group none style-auto">
-                                                            <select id="bathrooms" class="form-control select2-hidden-accessible" data-select2-id="select2-data-bathrooms" tabindex="-1" aria-hidden="true">
-                                                                <option value="" data-select2-id="select2-data-8-ybg4">&nbsp;</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                                <option value="5">5</option>
-                                                            </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="select2-data-7-g47t" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-bathrooms-container" aria-controls="select2-bathrooms-container"><span class="select2-selection__rendered" id="select2-bathrooms-container" role="textbox" aria-readonly="true" title="حمام"><span class="select2-selection__placeholder">حمام</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="form-group none">
-                                                            <input type="text" class="form-control" placeholder="حداقل مترمربع">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="form-group none">
-                                                            <input type="text" class="form-control" placeholder="حداکثر مترمربع">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 mt-2">
-                                                        <h6>قیمت</h6>
-                                                        <div class="rg-slider">
-                                                             <span class="irs irs--flat js-irs-0 irs-with-grid"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="">0</span><span class="irs-max" style="">1 000</span><span class="irs-from">0</span><span class="irs-to">0</span><span class="irs-single">0</span></span><span class="irs-grid"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%">0</span><span class="irs-grid-pol small" style="left: 20%"></span><span class="irs-grid-pol small" style="left: 15%"></span><span class="irs-grid-pol small" style="left: 10%"></span><span class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol" style="left: 25%"></span><span class="irs-grid-text js-grid-text-1" style="left: 25%; visibility: hidden;">250</span><span class="irs-grid-pol small" style="left: 45%"></span><span class="irs-grid-pol small" style="left: 40%"></span><span class="irs-grid-pol small" style="left: 35%"></span><span class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol" style="left: 50%"></span><span class="irs-grid-text js-grid-text-2" style="left: 50%; visibility: hidden;">500</span><span class="irs-grid-pol small" style="left: 70%"></span><span class="irs-grid-pol small" style="left: 65%"></span><span class="irs-grid-pol small" style="left: 60%"></span><span class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol" style="left: 75%"></span><span class="irs-grid-text js-grid-text-3" style="left: 75%; visibility: hidden;">750</span><span class="irs-grid-pol small" style="left: 95%"></span><span class="irs-grid-pol small" style="left: 90%"></span><span class="irs-grid-pol small" style="left: 85%"></span><span class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-4" style="left: 100%">1 000</span></span><span class="irs-bar"></span><span class="irs-shadow shadow-from"></span><span class="irs-shadow shadow-to"></span><span class="irs-handle from"><i></i><i></i><i></i></span><span class="irs-handle to type_last"><i></i><i></i><i></i></span></span><input type="text" class="js-range-slider irs-hidden-input" name="my_range" value="" tabindex="-1" readonly="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
-                                                        <h4 class="text-dark">امکانات و ویژگی ها</h4>
-                                                        <ul class="no-ul-list third-row">
-                                                            <li>
-                                                                <input id="a-1" class="checkbox-custom" name="a-1" type="checkbox">
-                                                                <label for="a-1" class="checkbox-custom-label">تهویه کننده هوا</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-2" class="checkbox-custom" name="a-2" type="checkbox">
-                                                                <label for="a-2" class="checkbox-custom-label">تختخواب</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-3" class="checkbox-custom" name="a-3" type="checkbox">
-                                                                <label for="a-3" class="checkbox-custom-label">گرمایش</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-4" class="checkbox-custom" name="a-4" type="checkbox">
-                                                                <label for="a-4" class="checkbox-custom-label">اینترنت</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-5" class="checkbox-custom" name="a-5" type="checkbox">
-                                                                <label for="a-5" class="checkbox-custom-label">مایکروویو</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-6" class="checkbox-custom" name="a-6" type="checkbox">
-                                                                <label for="a-6" class="checkbox-custom-label">سیگار</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-7" class="checkbox-custom" name="a-7" type="checkbox">
-                                                                <label for="a-7" class="checkbox-custom-label">تراس</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-8" class="checkbox-custom" name="a-8" type="checkbox">
-                                                                <label for="a-8" class="checkbox-custom-label">بالکن</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-9" class="checkbox-custom" name="a-9" type="checkbox">
-                                                                <label for="a-9" class="checkbox-custom-label">آیفون</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-10" class="checkbox-custom" name="a-10" type="checkbox">
-                                                                <label for="a-10" class="checkbox-custom-label">وای فای</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-11" class="checkbox-custom" name="a-11" type="checkbox">
-                                                                <label for="a-11" class="checkbox-custom-label">ساحل</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-12" class="checkbox-custom" name="a-12" type="checkbox">
-                                                                <label for="a-12" class="checkbox-custom-label">پارکینگ</label>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                <div id="searchBox" class="mt-1">
+                    <form class="container primary-bg rounded-2 py-4 px-5 top position-relative" data-sr-id="0" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s ease-out 0.5s, transform 2s ease-out 0.5s;">
+                        <ul class="nav nav-tabs gap-3 d-flex justify-content-center border-bottom-0" id="myTab" role="tablist" style="top: -40px;z-index: 9!important;">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-bold active" id="payment-tab" data-bs-toggle="tab" data-bs-target="#payment-tab-pane" type="button" role="tab" aria-controls="payment-tab-pane" aria-selected="false">خرید</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-bold" id="Installment-tab" data-bs-toggle="tab" data-bs-target="#Installment-tab-pane" type="button" role="tab" aria-controls="Installment-tab-pane" aria-selected="false">فروش</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-bold" id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-tab-pane" type="button" role="tab" aria-controls="vehicle-tab-pane" aria-selected="true">اجاره</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-3" id="myTabContent">
+                            <div class="d-flex align-items-center bg-white overflow-hidden px-3 rounded-4 flex-column flex-md-row gap-3 tab-pane fade active show" id="payment-tab-pane" role="tabpanel" aria-labelledby="payment-tab" tabindex="0">
+                                <div class="flex-grow-1 border-start py-3">
+                                    <label class="text-muted mb-2">قیمت</label>
+                                    <input type="text" class="form-control cursor border-0" placeholder="قیمت را وارد کنید...">
+                                </div>
+                                <div class="flex-grow-1 border-start py-3">
+                                    <label class="text-muted mb-2">شهر/استان</label>
+                                    <select id="location" class="form-control cursor border-0 font-bold second-text" data-select2-id="select2-data-location" tabindex="-1" aria-hidden="true">
+                                        <option value="" data-select2-id="select2-data-16-zul5">موقعیت</option>
+                                        <option value="1" data-select2-id="select2-data-35-n2xo">تهران</option>
+                                        <option value="2" data-select2-id="select2-data-36-4tq4">کرج</option>
+                                        <option value="3" data-select2-id="select2-data-37-10oz">تبریز</option>
+                                        <option value="4" data-select2-id="select2-data-38-9ykx">اصفهان</option>
+                                        <option value="5" data-select2-id="select2-data-39-e7gj">رشت</option>
+                                        <option value="6" data-select2-id="select2-data-40-ngla">زنجان</option>
+                                    </select>
+                                </div>
+                                <div class="flex-grow-1 border-start py-3">
+                                    <label class="text-muted mb-2">نوع ملک</label>
+                                    <select id="location" class="form-control cursor border-0 font-bold second-text" data-select2-id="select2-data-location" tabindex="-1" aria-hidden="true">
+                                        <option value="" data-select2-id="select2-data-16-zul5">نوع ملک</option>
+                                        <option value="1" data-select2-id="select2-data-35-n2xo">آپارتمان</option>
+                                        <option value="2" data-select2-id="select2-data-36-4tq4">ویلا</option>
+                                        <option value="3" data-select2-id="select2-data-37-10oz">تجاری</option>
+                                        <option value="4" data-select2-id="select2-data-38-9ykx">دفتر</option>
+                                        <option value="5" data-select2-id="select2-data-39-e7gj">پارکینگ</option>
+                                    </select>
+                                </div>
+                                <div class="flex-grow-1 border-start py-3">
+                                    <label class="text-white mb-2">.</label>
+                                    <div class="d-flex align-items-center justify-content-center gap-2 second-text font-bold cursor">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-sliders2" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M10.5 1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4H1.5a.5.5 0 0 1 0-1H10V1.5a.5.5 0 0 1 .5-.5ZM12 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-6.5 2A.5.5 0 0 1 6 6v1.5h8.5a.5.5 0 0 1 0 1H6V10a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5ZM1 8a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2A.5.5 0 0 1 1 8Zm9.5 2a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V13H1.5a.5.5 0 0 1 0-1H10v-1.5a.5.5 0 0 1 .5-.5Zm1.5 2.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"/>
+                                          </svg>
+                                       <span>فیلتر پیشرفته</span>
                                     </div>
                                 </div>
-                                <!-- Tab for Sell -->
-                                <div class="tab-pane fade" id="sell" role="tabpanel" aria-labelledby="sell-tab">
-                                    <div class="full_search_box nexio_search lightanic_search hero_search-radius modern">
-                                        <div class="search_hero_wrapping">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-sm-12 d-md-none d-lg-block">
-                                                    <div class="form-group">
-                                                        <label>قیمت</label>
-                                                        <input type="text" class="form-control search_input b-0" placeholder="شهر , منطقه , محله و ...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-3 col-sm-12">
-                                                    <div class="form-group">
-                                                        <label>شهر/استان</label>
-                                                        <div class="input-with-icon">
-                                                            <select id="lot-1" class="form-control select2-hidden-accessible" data-select2-id="select2-data-lot-1" tabindex="-1" aria-hidden="true">
-                                                                <option value="" data-select2-id="select2-data-18-8v0d">&nbsp;</option>
-                                                                <option value="1">تهران</option>
-                                                                <option value="2">کرج</option>
-                                                                <option value="3">تبریز</option>
-                                                                <option value="4">اصفهان</option>
-                                                                <option value="5">رشت</option>
-                                                                <option value="6">زنجان</option>
-                                                            </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="select2-data-17-a8mc" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-lot-1-container" aria-controls="select2-lot-1-container"><span class="select2-selection__rendered" id="select2-lot-1-container" role="textbox" aria-readonly="true" title="مکان را انتخاب کنید"><span class="select2-selection__placeholder">مکان را انتخاب کنید</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-2 col-md-3 col-sm-12">
-                                                    <div class="form-group">
-                                                        <label>نوع ملک</label>
-                                                        <div class="input-with-icon">
-                                                            <select id="ptype-1" class="form-control select2-hidden-accessible" data-select2-id="select2-data-ptype-1" tabindex="-1" aria-hidden="true">
-                                                                <option value="" data-select2-id="select2-data-22-ipfl">&nbsp;</option>
-                                                                <option value="1">همه دسته ها</option>
-                                                                <option value="2">آپارتمان</option>
-                                                                <option value="3">ویلا</option>
-                                                                <option value="4">تجاری</option>
-                                                                <option value="5">دفتر</option>
-                                                                <option value="6">پارکینگ</option>
-                                                            </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="select2-data-21-97x6" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-ptype-1-container" aria-controls="select2-ptype-1-container"><span class="select2-selection__rendered" id="select2-ptype-1-container" role="textbox" aria-readonly="true" title="نوع ملک"><span class="select2-selection__placeholder">نوع ملک</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-2 col-md-3 col-sm-12">
-                                                    <div class="form-group none">
-                                                        <a class="collapsed ad-search" data-toggle="collapse" data-parent="#search1" data-target="#advance-search-1" href="javascript:void(0);" aria-expanded="false" aria-controls="advance-search"><i class="fa fa-sliders-h ml-2"></i>فیلتر پیشرفته</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-2 col-md-3 col-sm-12 small-padd">
-                                                    <div class="form-group none">
-                                                        <a href="#" class="btn search-btn">جستجوی ملک</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Collapse Advance Search Form -->
-                                            <div class="collapse" id="advance-search-1" aria-expanded="false" role="banner">
-                                                <div class="row">
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="form-group none style-auto">
-                                                            <select id="bedrooms1" class="form-control select2-hidden-accessible" data-select2-id="select2-data-bedrooms1" tabindex="-1" aria-hidden="true">
-                                                                <option value="" data-select2-id="select2-data-4-82q2">&nbsp;</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                                <option value="5">5</option>
-                                                            </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="select2-data-3-4o1e" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-bedrooms1-container" aria-controls="select2-bedrooms1-container"><span class="select2-selection__rendered" id="select2-bedrooms1-container" role="textbox" aria-readonly="true" title="اتاق خواب"><span class="select2-selection__placeholder">اتاق خواب</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="form-group none style-auto">
-                                                            <select id="bathrooms1" class="form-control select2-hidden-accessible" data-select2-id="select2-data-bathrooms1" tabindex="-1" aria-hidden="true">
-                                                                <option value="" data-select2-id="select2-data-10-eg0r">&nbsp;</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                                <option value="5">5</option>
-                                                            </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="select2-data-9-37ug" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-bathrooms1-container" aria-controls="select2-bathrooms1-container"><span class="select2-selection__rendered" id="select2-bathrooms1-container" role="textbox" aria-readonly="true" title="حمام"><span class="select2-selection__placeholder">حمام</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="form-group none">
-                                                            <input type="text" class="form-control" placeholder="حداقل مترمربع">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="form-group none">
-                                                            <input type="text" class="form-control" placeholder="حداکثر مترمربع">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 mt-2">
-                                                        <h6>قیمت</h6>
-                                                        <div class="rg-slider">
-                                                             <span class="irs irs--flat js-irs-1 irs-with-grid"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="">0</span><span class="irs-max" style="">1 000</span><span class="irs-from">0</span><span class="irs-to">0</span><span class="irs-single">0</span></span><span class="irs-grid"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%">0</span><span class="irs-grid-pol small" style="left: 20%"></span><span class="irs-grid-pol small" style="left: 15%"></span><span class="irs-grid-pol small" style="left: 10%"></span><span class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol" style="left: 25%"></span><span class="irs-grid-text js-grid-text-1" style="left: 25%; visibility: hidden;">250</span><span class="irs-grid-pol small" style="left: 45%"></span><span class="irs-grid-pol small" style="left: 40%"></span><span class="irs-grid-pol small" style="left: 35%"></span><span class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol" style="left: 50%"></span><span class="irs-grid-text js-grid-text-2" style="left: 50%; visibility: hidden;">500</span><span class="irs-grid-pol small" style="left: 70%"></span><span class="irs-grid-pol small" style="left: 65%"></span><span class="irs-grid-pol small" style="left: 60%"></span><span class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol" style="left: 75%"></span><span class="irs-grid-text js-grid-text-3" style="left: 75%; visibility: hidden;">750</span><span class="irs-grid-pol small" style="left: 95%"></span><span class="irs-grid-pol small" style="left: 90%"></span><span class="irs-grid-pol small" style="left: 85%"></span><span class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-4" style="left: 100%">1 000</span></span><span class="irs-bar"></span><span class="irs-shadow shadow-from"></span><span class="irs-shadow shadow-to"></span><span class="irs-handle from"><i></i><i></i><i></i></span><span class="irs-handle to type_last"><i></i><i></i><i></i></span></span><input type="text" class="js-range-slider irs-hidden-input" name="my_range" value="" tabindex="-1" readonly="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
-                                                        <h4 class="text-dark">امکانات و ویژگی ها</h4>
-                                                        <ul class="no-ul-list third-row">
-                                                            <li>
-                                                                <input id="a-1a" class="checkbox-custom" name="a-1a" type="checkbox">
-                                                                <label for="a-1a" class="checkbox-custom-label">تهویه کننده هوا</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-2b" class="checkbox-custom" name="a-2b" type="checkbox">
-                                                                <label for="a-2b" class="checkbox-custom-label">تختخواب</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-3c" class="checkbox-custom" name="a-3c" type="checkbox">
-                                                                <label for="a-3c" class="checkbox-custom-label">گرمایش</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-4d" class="checkbox-custom" name="a-4d" type="checkbox">
-                                                                <label for="a-4d" class="checkbox-custom-label">اینترنت</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-5e" class="checkbox-custom" name="a-5e" type="checkbox">
-                                                                <label for="a-5e" class="checkbox-custom-label">مایکروویو</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-6f" class="checkbox-custom" name="a-6f" type="checkbox">
-                                                                <label for="a-6f" class="checkbox-custom-label">سیگار</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-7g" class="checkbox-custom" name="a-7g" type="checkbox">
-                                                                <label for="a-7g" class="checkbox-custom-label">تراس</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-8h" class="checkbox-custom" name="a-8h" type="checkbox">
-                                                                <label for="a-8h" class="checkbox-custom-label">بالکن</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-9i" class="checkbox-custom" name="a-9i" type="checkbox">
-                                                                <label for="a-9i" class="checkbox-custom-label">آیفون</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-10j" class="checkbox-custom" name="a-10j" type="checkbox">
-                                                                <label for="a-10j" class="checkbox-custom-label">وای فای</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-11k" class="checkbox-custom" name="a-11k" type="checkbox">
-                                                                <label for="a-11k" class="checkbox-custom-label">ساحل</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-12l" class="checkbox-custom" name="a-12l" type="checkbox">
-                                                                <label for="a-12l" class="checkbox-custom-label">پارکینگ</label>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Tab for Rent -->
-                                <div class="tab-pane fade" id="rent" role="tabpanel" aria-labelledby="rent-tab">
-                                    <div class="full_search_box nexio_search lightanic_search hero_search-radius modern">
-                                        <div class="search_hero_wrapping">
-                                            <div class="row">
-                                                <div class="col-lg-3 col-sm-12 d-md-none d-lg-block">
-                                                    <div class="form-group">
-                                                        <label>قیمت</label>
-                                                        <input type="text" class="form-control search_input b-0" placeholder="شهر , منطقه , محله و ...">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3 col-md-3 col-sm-12">
-                                                    <div class="form-group">
-                                                        <label>شهر/استان</label>
-                                                        <div class="input-with-icon">
-                                                            <select id="lot-2" class="form-control select2-hidden-accessible" data-select2-id="select2-data-lot-2" tabindex="-1" aria-hidden="true">
-                                                                <option value="" data-select2-id="select2-data-20-wjwp">&nbsp;</option>
-                                                                <option value="1">تهران</option>
-                                                                <option value="2">کرج</option>
-                                                                <option value="3">تبریز</option>
-                                                                <option value="4">اصفهان</option>
-                                                                <option value="5">رشت</option>
-                                                                <option value="6">زنجان</option>
-                                                            </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="select2-data-19-5511" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-lot-2-container" aria-controls="select2-lot-2-container"><span class="select2-selection__rendered" id="select2-lot-2-container" role="textbox" aria-readonly="true" title="موقعیت"><span class="select2-selection__placeholder">موقعیت</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-2 col-md-3 col-sm-12">
-                                                    <div class="form-group">
-                                                        <label>نوع ملک</label>
-                                                        <div class="input-with-icon">
-                                                            <select id="ptype-2" class="form-control select2-hidden-accessible" data-select2-id="select2-data-ptype-2" tabindex="-1" aria-hidden="true">
-                                                                <option value="" data-select2-id="select2-data-24-v2vf">&nbsp;</option>
-                                                                <option value="1">همه دسته ها</option>
-                                                                <option value="2">آپارتمان</option>
-                                                                <option value="3">ویلا</option>
-                                                                <option value="4">تجاری</option>
-                                                                <option value="5">دفتر</option>
-                                                                <option value="6">پارکینگ</option>
-                                                            </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="select2-data-23-c1yf" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-ptype-2-container" aria-controls="select2-ptype-2-container"><span class="select2-selection__rendered" id="select2-ptype-2-container" role="textbox" aria-readonly="true" title="نوع ملک"><span class="select2-selection__placeholder">نوع ملک</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-2 col-md-3 col-sm-12">
-                                                    <div class="form-group none">
-                                                        <a class="collapsed ad-search" data-toggle="collapse" data-parent="#search" data-target="#advance-search-2" href="javascript:void(0);" aria-expanded="false" aria-controls="advance-search"><i class="fa fa-sliders-h ml-2"></i>فیلتر پیشرفته</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-2 col-md-3 col-sm-12 small-padd">
-                                                    <div class="form-group none">
-                                                        <a href="#" class="btn search-btn">جستجوی ملک</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Collapse Advance Search Form -->
-                                            <div class="collapse" id="advance-search-2" aria-expanded="false" role="banner">
-                                                <div class="row">
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="form-group none style-auto">
-                                                            <select id="bedrooms2" class="form-control select2-hidden-accessible" data-select2-id="select2-data-bedrooms2" tabindex="-1" aria-hidden="true">
-                                                                <option value="" data-select2-id="select2-data-6-ddrb">&nbsp;</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                                <option value="5">5</option>
-                                                            </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="select2-data-5-tyd9" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-bedrooms2-container" aria-controls="select2-bedrooms2-container"><span class="select2-selection__rendered" id="select2-bedrooms2-container" role="textbox" aria-readonly="true" title="اتاق خواب"><span class="select2-selection__placeholder">اتاق خواب</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="form-group none style-auto">
-                                                            <select id="bathrooms2" class="form-control select2-hidden-accessible" data-select2-id="select2-data-bathrooms2" tabindex="-1" aria-hidden="true">
-                                                                <option value="" data-select2-id="select2-data-12-ipun">&nbsp;</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                                <option value="4">4</option>
-                                                                <option value="5">5</option>
-                                                            </select><span class="select2 select2-container select2-container--default" dir="rtl" data-select2-id="select2-data-11-ctip" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-bathrooms2-container" aria-controls="select2-bathrooms2-container"><span class="select2-selection__rendered" id="select2-bathrooms2-container" role="textbox" aria-readonly="true" title="حمام"><span class="select2-selection__placeholder">حمام</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="form-group none">
-                                                            <input type="text" class="form-control" placeholder="حداقل مترمربع">
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="col-lg-3 col-md-6 col-sm-6">
-                                                        <div class="form-group none">
-                                                            <input type="text" class="form-control" placeholder="حداکثر مترمربع">
-                                                        </div>
-                                                    </div>
-                                                    
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 mt-2">
-                                                        <h6>قیمت</h6>
-                                                        <div class="rg-slider">
-                                                             <span class="irs irs--flat js-irs-2 irs-with-grid"><span class="irs"><span class="irs-line" tabindex="0"></span><span class="irs-min" style="">0</span><span class="irs-max" style="">1 000</span><span class="irs-from">0</span><span class="irs-to">0</span><span class="irs-single">0</span></span><span class="irs-grid"><span class="irs-grid-pol" style="left: 0%"></span><span class="irs-grid-text js-grid-text-0" style="left: 0%">0</span><span class="irs-grid-pol small" style="left: 20%"></span><span class="irs-grid-pol small" style="left: 15%"></span><span class="irs-grid-pol small" style="left: 10%"></span><span class="irs-grid-pol small" style="left: 5%"></span><span class="irs-grid-pol" style="left: 25%"></span><span class="irs-grid-text js-grid-text-1" style="left: 25%; visibility: hidden;">250</span><span class="irs-grid-pol small" style="left: 45%"></span><span class="irs-grid-pol small" style="left: 40%"></span><span class="irs-grid-pol small" style="left: 35%"></span><span class="irs-grid-pol small" style="left: 30%"></span><span class="irs-grid-pol" style="left: 50%"></span><span class="irs-grid-text js-grid-text-2" style="left: 50%; visibility: hidden;">500</span><span class="irs-grid-pol small" style="left: 70%"></span><span class="irs-grid-pol small" style="left: 65%"></span><span class="irs-grid-pol small" style="left: 60%"></span><span class="irs-grid-pol small" style="left: 55%"></span><span class="irs-grid-pol" style="left: 75%"></span><span class="irs-grid-text js-grid-text-3" style="left: 75%; visibility: hidden;">750</span><span class="irs-grid-pol small" style="left: 95%"></span><span class="irs-grid-pol small" style="left: 90%"></span><span class="irs-grid-pol small" style="left: 85%"></span><span class="irs-grid-pol small" style="left: 80%"></span><span class="irs-grid-pol" style="left: 100%"></span><span class="irs-grid-text js-grid-text-4" style="left: 100%">1 000</span></span><span class="irs-bar"></span><span class="irs-shadow shadow-from"></span><span class="irs-shadow shadow-to"></span><span class="irs-handle from"><i></i><i></i><i></i></span><span class="irs-handle to type_last"><i></i><i></i><i></i></span></span><input type="text" class="js-range-slider irs-hidden-input" name="my_range" value="" tabindex="-1" readonly="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                
-                                                    <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
-                                                        <h4 class="text-dark">امکانات و ویژگی ها</h4>
-                                                        <ul class="no-ul-list third-row">
-                                                            <li>
-                                                                <input id="a-a1" class="checkbox-custom" name="a-a1" type="checkbox">
-                                                                <label for="a-a1" class="checkbox-custom-label">تهویه کننده هوا</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-b2" class="checkbox-custom" name="a-b2" type="checkbox">
-                                                                <label for="a-b2" class="checkbox-custom-label">تختخواب</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-c3" class="checkbox-custom" name="a-c3" type="checkbox">
-                                                                <label for="a-c3" class="checkbox-custom-label">گرمایش</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-d4" class="checkbox-custom" name="a-d4" type="checkbox">
-                                                                <label for="a-d4" class="checkbox-custom-label">اینترنت</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-e5" class="checkbox-custom" name="a-e5" type="checkbox">
-                                                                <label for="a-e5" class="checkbox-custom-label">مایکروویو</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-f6" class="checkbox-custom" name="a-f6" type="checkbox">
-                                                                <label for="a-f6" class="checkbox-custom-label">سیگار</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-g7" class="checkbox-custom" name="a-g7" type="checkbox">
-                                                                <label for="a-g7" class="checkbox-custom-label">تراس</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-h8" class="checkbox-custom" name="a-h8" type="checkbox">
-                                                                <label for="a-h8" class="checkbox-custom-label">بالکن</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-i9" class="checkbox-custom" name="a-i9" type="checkbox">
-                                                                <label for="a-i9" class="checkbox-custom-label">آیفون</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-j10" class="checkbox-custom" name="a-j10" type="checkbox">
-                                                                <label for="a-j10" class="checkbox-custom-label">وای فای</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-k11" class="checkbox-custom" name="a-k11" type="checkbox">
-                                                                <label for="a-k11" class="checkbox-custom-label">ساحل</label>
-                                                            </li>
-                                                            <li>
-                                                                <input id="a-l12" class="checkbox-custom" name="a-l12" type="checkbox">
-                                                                <label for="a-l12" class="checkbox-custom-label">پارکینگ</label>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="flex-grow-1 py-3">
+                                    <label class="text-white mb-2">.</label>
+                                    <input type="submit" value="جستجوی ملک" class="btn btn-success d-block w-100">
                                 </div>
                             </div>
+                            <div class="d-flex align-items-center flex-column flex-md-row gap-3 tab-pane fade" id="Installment-tab-pane" role="tabpanel" aria-labelledby="Installment-tab" tabindex="0">
+                                <input class="form-control" placeholder="Maximum Installment">
+                                <input class="form-control" placeholder="Minimum Installment">
+                                <input type="submit" value="search" class="btn third-bg text-white">
+                            </div>
+                            <div class="d-flex align-items-center flex-column flex-md-row gap-3 tab-pane fade" id="vehicle-tab-pane" role="tabpanel" aria-labelledby="vehicle-tab" tabindex="0">
+                                <input class="form-control" placeholder="Maximum Installment">
+                                <input class="form-control" placeholder="Minimum Installment">
+                                <input type="submit" value="search" class="btn third-bg text-white">
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
