@@ -276,6 +276,35 @@ span.verified img {
     right:12px;
 }
 
+/* testimonials */
+
+.testimonials{
+    background: #122947 url('../img/pattern.png') no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+}
+
+.testimonials .swiper-pagination-bullets-dynamic {
+    overflow: hidden;
+    font-size: 0;
+    position: relative;
+    margin: auto;
+      margin-top: auto;
+    margin-top: auto;
+    margin-top: 24px;
+  }
+  .testimonials .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main,.testimonials .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,.testimonials .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev,.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+    background-color: #198754;
+    border: 4px solid #7ea492;
+    width: 17px;
+    height: 17px;
+  }
+  .testimonials .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next,.testimonials .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev,.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+  }
+
 /* responsive */
 @media only screen and (max-width:1400px) {}
 

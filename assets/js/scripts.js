@@ -26,6 +26,15 @@ var menuSwiper = new Swiper(".team", {
     }
   }
 });
+var menuSwiper = new Swiper(".testimonials", {
+  loop: true,
+  autoplay: true,
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+},
+});
 // animation
 
 ScrollReveal().reveal('.top', {
