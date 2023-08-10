@@ -304,6 +304,10 @@ span.verified img {
     width: 12px;
     height: 12px;
   }
+  /* second banner */
+  .banner{
+    height: 580px;
+  }
 
 /* responsive */
 @media only screen and (max-width:1400px) {}
