@@ -104,7 +104,7 @@ header a {
 }
 
 header a:hover,
-header a.active {
+header a.active,.teamSocials a:hover {
     color: #198754 !important;
 }
 
@@ -255,6 +255,25 @@ span.verified img {
   left: -6px;
   top: 0px;
   max-width: 15px !important;
+}
+
+/* search location */
+
+.city-box > div{
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    background: rgba(15, 28, 47, 0.65);
+    margin: 15px;
+    border-radius: 6px;
+    transition: all .4s;
+}
+.city-box:hover > div{
+    margin: 0;
+    left:12px;
+    right:12px;
 }
 
 /* responsive */
