@@ -244,6 +244,7 @@ img[alt="award"]{
 .category a:hover {
     background: #198754;
     border: 1px dashed white;
+    box-shadow: 0 0 0px 10px #1987548b;
 }
 .category a:hover p,.category a:hover svg{
     color: white!important;
