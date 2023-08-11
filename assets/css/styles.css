@@ -40,7 +40,9 @@ body {
 .bg-gray {
     background-color: #f7f9fc;
 }
-
+.bg-gray2{
+    background-color: #d7d7d7;
+}
 .font-bold {
     font-family: "parastoo-Bold";
 }
@@ -347,6 +349,14 @@ span.verified img {
 
 .custom-shape-divider-bottom-1691677134 .shape-fill {
     fill: #FFFFFF;
+}
+
+/* footer */
+footer{
+    background-color: #122947;
+}
+footer img[alt='footer-logo']{
+    width: 366px;
 }
 
 /* responsive */
