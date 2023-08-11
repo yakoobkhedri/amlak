@@ -108,7 +108,7 @@
     <main>
 
         <!-- banner && searchBox -->
-        <section class="hero-banner vedio-banner">
+        <section class="hero-banner vedio-banner position-relative">
             <div class="overlay"></div>
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="assets/img/banners.mp4" type="video/mp4">
@@ -289,10 +289,42 @@
                     </form>
                 </div>
             </div>
+            <!-- award -->
+            <div class="award container shadow bg-white rounded-4 position-absolute mx-auto end-0 start-0">
+                <div class="row font-bold">
+                    <div class="col-lg-4 p-3 border-start">
+                       <div class="d-flex align-items-center gap-3 justify-content-center">
+                          <img alt="award" src="assets/img/award-1.png" class="img-fluid">
+                          <div>
+                            <h1 class="text-success display-5 mb-0">1400</h1>
+                            <p class="text-muted h5"> جوایز سالانه </p>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-4 p-3 border-start">
+                        <div class="d-flex align-items-center gap-3 justify-content-center">
+                           <img alt="award" src="assets/img/award-2.png" class="img-fluid">
+                           <div>
+                             <h1 class="text-warning display-5 mb-0">1399</h1>
+                             <p class="text-muted h5">  جایزه ویژه املاک  </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-4 p-3">
+                        <div class="d-flex align-items-center gap-3 justify-content-center">
+                           <img alt="award" src="assets/img/award-5.png" class="img-fluid">
+                           <div>
+                             <h1 class="text-danger display-5 mb-0">1398</h1>
+                             <p class="text-muted h5">  جایزه سالانه ملک  </p>
+                           </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
         </section>
 
         <!-- category -->
-        <section class="category py-5 bg-gray">
+        <section class="category pb-5 bg-gray">
             <div class="container">
                 <div class="text-center w-50 mx-auto">
                     <h2 class="second-text font-bold">دسته بندی خود را انتخاب کنید</h2>
@@ -1481,7 +1513,8 @@
                                     <div>
                                         <img alt="blog" src="assets/img/b-1.jpg" class="img-fluid">
                                     </div>
-                                    <div class="d-flex align-items-center h5 overflow-hidden rounded-3 font-bold position-absolute z-10 bottom-0 mb-3 me-3">
+                                    <div
+                                        class="d-flex align-items-center h5 overflow-hidden rounded-3 font-bold position-absolute z-10 bottom-0 mb-3 me-3">
                                         <div class="bg-success p-3 text-white">12</div>
                                         <div class="bg-white py-3 px-4">اسفند 1400</div>
                                     </div>
@@ -1500,11 +1533,14 @@
                                         <span>بهمن رمضانی</span>
                                     </a>
                                     <div class="d-flex align-items-center gap-2 text-muted font-bold">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                            <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-                                          </svg>
-                                      <span>22</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                            <path
+                                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+                                        <span>22</span>
                                     </div>
                                 </div>
                             </div>
@@ -1515,7 +1551,8 @@
                                     <div>
                                         <img alt="blog" src="assets/img/b-2.jpg" class="img-fluid">
                                     </div>
-                                    <div class="d-flex align-items-center h5 overflow-hidden rounded-3 font-bold position-absolute z-10 bottom-0 mb-3 me-3">
+                                    <div
+                                        class="d-flex align-items-center h5 overflow-hidden rounded-3 font-bold position-absolute z-10 bottom-0 mb-3 me-3">
                                         <div class="bg-success p-3 text-white">15</div>
                                         <div class="bg-white py-3 px-4">خرداد 1400</div>
                                     </div>
@@ -1534,11 +1571,14 @@
                                         <span>بهمن رمضانی</span>
                                     </a>
                                     <div class="d-flex align-items-center gap-2 text-muted font-bold">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                            <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-                                          </svg>
-                                      <span>22</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                            <path
+                                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+                                        <span>22</span>
                                     </div>
                                 </div>
                             </div>
@@ -1549,7 +1589,8 @@
                                     <div>
                                         <img alt="blog" src="assets/img/b-3.jpg" class="img-fluid">
                                     </div>
-                                    <div class="d-flex align-items-center h5 overflow-hidden rounded-3 font-bold position-absolute z-10 bottom-0 mb-3 me-3">
+                                    <div
+                                        class="d-flex align-items-center h5 overflow-hidden rounded-3 font-bold position-absolute z-10 bottom-0 mb-3 me-3">
                                         <div class="bg-success p-3 text-white">22</div>
                                         <div class="bg-white py-3 px-4">فروردین 1400</div>
                                     </div>
@@ -1568,11 +1609,14 @@
                                         <span>بهمن رمضانی</span>
                                     </a>
                                     <div class="d-flex align-items-center gap-2 text-muted font-bold">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                            <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-                                          </svg>
-                                      <span>22</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                            <path
+                                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+                                        <span>22</span>
                                     </div>
                                 </div>
                             </div>
@@ -1583,7 +1627,8 @@
                                     <div>
                                         <img alt="blog" src="assets/img/b-4.jpg" class="img-fluid">
                                     </div>
-                                    <div class="d-flex align-items-center h5 overflow-hidden rounded-3 font-bold position-absolute z-10 bottom-0 mb-3 me-3">
+                                    <div
+                                        class="d-flex align-items-center h5 overflow-hidden rounded-3 font-bold position-absolute z-10 bottom-0 mb-3 me-3">
                                         <div class="bg-success p-3 text-white">6</div>
                                         <div class="bg-white py-3 px-4">تیر 1400</div>
                                     </div>
@@ -1602,11 +1647,14 @@
                                         <span>بهمن رمضانی</span>
                                     </a>
                                     <div class="d-flex align-items-center gap-2 text-muted font-bold">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                            <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-                                          </svg>
-                                      <span>22</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                            <path
+                                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+                                        <span>22</span>
                                     </div>
                                 </div>
                             </div>
@@ -1617,7 +1665,8 @@
                                     <div>
                                         <img alt="blog" src="assets/img/b-5.jpg" class="img-fluid">
                                     </div>
-                                    <div class="d-flex align-items-center h5 overflow-hidden rounded-3 font-bold position-absolute z-10 bottom-0 mb-3 me-3">
+                                    <div
+                                        class="d-flex align-items-center h5 overflow-hidden rounded-3 font-bold position-absolute z-10 bottom-0 mb-3 me-3">
                                         <div class="bg-success p-3 text-white">9</div>
                                         <div class="bg-white py-3 px-4">بهمن 1400</div>
                                     </div>
@@ -1636,11 +1685,14 @@
                                         <span>بهمن رمضانی</span>
                                     </a>
                                     <div class="d-flex align-items-center gap-2 text-muted font-bold">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                            <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-                                          </svg>
-                                      <span>22</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                            <path
+                                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+                                        <span>22</span>
                                     </div>
                                 </div>
                             </div>
@@ -1651,7 +1703,8 @@
                                     <div>
                                         <img alt="blog" src="assets/img/b-6.jpg" class="img-fluid">
                                     </div>
-                                    <div class="d-flex align-items-center h5 overflow-hidden rounded-3 font-bold position-absolute z-10 bottom-0 mb-3 me-3">
+                                    <div
+                                        class="d-flex align-items-center h5 overflow-hidden rounded-3 font-bold position-absolute z-10 bottom-0 mb-3 me-3">
                                         <div class="bg-success p-3 text-white">31</div>
                                         <div class="bg-white py-3 px-4">مرداد 1400</div>
                                     </div>
@@ -1670,11 +1723,14 @@
                                         <span>بهمن رمضانی</span>
                                     </a>
                                     <div class="d-flex align-items-center gap-2 text-muted font-bold">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
-                                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                            <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-                                          </svg>
-                                      <span>22</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                                            <path
+                                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                            <path
+                                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+                                        <span>22</span>
                                     </div>
                                 </div>
                             </div>

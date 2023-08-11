@@ -219,7 +219,19 @@ header ul ul::before {
     right: 0;
 }
 
+.award{
+    bottom: -74px;
+}
+
+img[alt="award"]{
+    width: 79px;
+}
+
 /* category */
+
+.category{
+    padding-top: 151px;
+}
 
 .category a {
     background: #f4f5f7;
