@@ -372,6 +372,12 @@ span.verified img {
 .custom-shape-divider-bottom-1691677134 .shape-fill {
     fill: #FFFFFF;
 }
+/* blog */
+.blog img[alt="author"]{
+    width: 35px;
+    height: 35px;
+    display: block;
+}
 
 /* footer */
 footer {
