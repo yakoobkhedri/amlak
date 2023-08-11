@@ -40,9 +40,11 @@ body {
 .bg-gray {
     background-color: #f7f9fc;
 }
-.bg-gray2{
+
+.bg-gray2 {
     background-color: #d7d7d7;
 }
+
 .font-bold {
     font-family: "parastoo-Bold";
 }
@@ -217,6 +219,24 @@ header ul ul::before {
     right: 0;
 }
 
+/* category */
+
+.category a {
+    background: #f4f5f7;
+    border-radius: 18px;
+    padding: 2.5rem 2rem;
+    transition: all ease 0.4s;
+    border: 1px dashed #198754;
+    box-shadow: 0 0 0px 10px rgb(244 245 247);
+}
+.category a:hover {
+    background: #198754;
+    border: 1px dashed white;
+}
+.category a:hover p,.category a:hover svg{
+    color: white!important;
+}
+
 /* latest homes */
 
 .homes img[alt='bed'] {
@@ -325,12 +345,14 @@ span.verified img {
 }
 
 /* partner */
-.partner{
+.partner {
     padding-bottom: 244px;
 }
+
 .partner img[alt='partner'] {
     width: 35px;
 }
+
 .custom-shape-divider-bottom-1691677134 {
     position: absolute;
     bottom: 0;
@@ -352,10 +374,11 @@ span.verified img {
 }
 
 /* footer */
-footer{
+footer {
     background-color: #122947;
 }
-footer img[alt='footer-logo']{
+
+footer img[alt='footer-logo'] {
     width: 366px;
 }
 
